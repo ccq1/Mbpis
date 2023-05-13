@@ -1,0 +1,78 @@
+﻿<Window x:Class="Mpbis.mpbisWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mpbis"
+        mc:Ignorable="d"
+        Title="mpbisWindow" Height="450" Width="800">
+    <DockPanel>
+        <DockPanel.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF40B6E0" Offset="0"/>
+                <GradientStop Color="#FFD0E5F1" Offset="0.793"/>
+            </LinearGradientBrush>
+
+        </DockPanel.Background>
+        <StackPanel Background="Blue" DockPanel.Dock="Top">
+            <TextBlock HorizontalAlignment="Center" FontSize="40">手机话费查询系统</TextBlock>
+        </StackPanel>
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Left" Background="#FF87CE53">
+                <Button Name="backmainwindowbtn" Margin="0,10,0,5">返回主界面</Button>
+                <Expander Header="2021年 ">
+                    <StackPanel Name="btn">
+                        <Button Name="btn2101"  Content="1月"/>
+                        <Button Name="btn2102" Content="2月"/>
+                        <Button Name="btn2103" Content="3月"/>
+                        <Button Name="btn2104" Content="4月"/>
+                        <Button Name="btn2105" Content="5月"/>
+                        <Button Name="btn2106" Content="6月"/>
+                        <Button Name="btn2107" Content="7月"/>
+                        <Button Name="btn2108" Content="8月"/>
+                        <Button Name="btn2109" Content="9月"/>
+                        <Button Name="btn2110" Content="10月"/>
+                        <Button Name="btn2111" Content="11月"/>
+                        <Button Name="btn2112" Content="12月"/>
+                    </StackPanel>
+                </Expander>
+
+
+
+            </StackPanel>
+            <StackPanel>
+                <WrapPanel Margin="5,5,0,0" >
+                    <Label FontSize="10" Content="   尊敬的客户">
+
+                    </Label>
+
+
+                </WrapPanel>
+                <WrapPanel>
+                    <Label Name="usernNumber" FontSize="20" Content="18437677155" Padding="40,0,0,0">
+
+                    </Label>
+                    <Label Name="userName" Content="(代某某)" Margin="0,3,0,0"></Label>
+                </WrapPanel>
+                <StackPanel Height="2" Background="Black"></StackPanel>
+                <WrapPanel HorizontalAlignment="Center">
+                    <StackPanel Margin="0,0,80,0" >
+                        <Label HorizontalContentAlignment="Center" Margin="0,10,0,-10">您本号码本月消费(元）</Label>
+                        <Label FontSize="40" Name="costLabel" Content="60.26" HorizontalContentAlignment="Center"></Label>
+                    </StackPanel>
+                    <StackPanel>
+                        <Label HorizontalContentAlignment="Center" Margin="0,10,0,-10">您本号码本月结余(元）</Label>
+                        <Label FontSize="40" Content="66" HorizontalContentAlignment="Center" Name="balanceLabel"></Label>
+                    </StackPanel>
+                </WrapPanel>
+                <StackPanel Height="2" Background="Black"></StackPanel>
+                <TextBlock Text="  扣费项目:" Margin="0,10" FontSize="20" ></TextBlock>
+                <ListBox Name="listBox"></ListBox>
+                <Label Name="label" Visibility="Collapsed" IsManipulationEnabled="True" ></Label>
+                <Button Name="backbtn" Visibility="Collapsed" HorizontalAlignment="Center">返回</Button>
+
+
+            </StackPanel>
+        </DockPanel>
+    </DockPanel>
+</Window>

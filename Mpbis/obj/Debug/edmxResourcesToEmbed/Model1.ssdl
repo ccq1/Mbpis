@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Table1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="bussiness">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="cost" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="details" Type="nvarchar(max)" />
+    <Property Name="kind" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="db01">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Odate" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="cost" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="balance" Type="int" />
+    <Property Name="year" Type="int" />
+    <Property Name="month" Type="int" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" />
+    <Property Name="number" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="Table1ModelStoreContainer">
+    <EntitySet Name="bussiness" EntityType="Self.bussiness" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="db01" EntityType="Self.db01" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user" EntityType="Self.user" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

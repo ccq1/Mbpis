@@ -1,0 +1,5 @@
+﻿INSERT INTO [dbo].[db01] ([Id], [name], [Odate], [cost]) VALUES (1, N'49元套餐a档', N'2020-01-01', N'49')
+INSERT INTO [dbo].[db01] ([Id], [name], [Odate], [cost]) VALUES (2, N'头条抖音包-9元15G', N'2020-01-01', N'9')
+INSERT INTO [dbo].[db01] ([Id], [name], [Odate], [cost]) VALUES (3, N'和彩云河南权益包', N'2020-01-01', N'3')
+INSERT INTO [dbo].[db01] ([Id], [name], [Odate], [cost]) VALUES (4, N'10G流量月包', N'2020-01-01', N'20')
+INSERT INTO [dbo].[db01] ([Id], [name], [Odate], [cost]) VALUES (5, N'10G流量月包', N'2020-01-01', N'20')
